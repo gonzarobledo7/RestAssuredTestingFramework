@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite API Books">
+    <test name="PruebasAPIBooks">
+        <groups>
+            <run>
+                <!-- Incluye solo el grupo 'API books' -->
+                <include name="API Books"/>
+            </run>
+        </groups>
+        <classes>
+            <!-- Lista de clases de prueba a considerar. En este caso, solo TokenAuth.java -->
+            <class name="APITests.TokenAuth"/>
+        </classes>
+    </test>
+</suite>
